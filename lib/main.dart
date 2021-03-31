@@ -24,6 +24,8 @@ class _MyAppState extends State<MyApp> {
               backgroundColor: Colors.deepPurple,
             ),
             body : Container(
+              height: double.infinity,
+              width:double.infinity, 
               child:WebView(
                 javascriptMode: JavascriptMode.unrestricted,
                 initialUrl: 'https://www.bing.com/covid/local/srilanka?form=C19ANS',
