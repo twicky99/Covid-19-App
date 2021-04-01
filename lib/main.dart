@@ -23,7 +23,12 @@ class _MyAppState extends State<MyApp> {
               title:Text('Covid-19 App'),
               backgroundColor: Colors.deepPurple,
             ),
-           
+            body : Container(
+              child:WebView(
+                javascriptMode: JavascriptMode.unrestricted,
+                initialUrl: 'https://www.bing.com/covid/local/srilanka?form=C19ANS',
+              )
+            )
           ),
       )
     );
